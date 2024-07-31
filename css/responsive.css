@@ -1,0 +1,543 @@
+@media (max-width: 1440px) {
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 400px;
+    min-height: 600px;
+  }
+  #PRODUCTS .products-div .boxes .carousel-item .card-img .pr-2 {
+    width: 100%;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 360px;
+  }
+  #RECIPES .recipes-div .posters .poster .pr-1 {
+    width: 100% !important;
+  }
+
+  #FOOTER .foot-icons {
+    width: 43%;
+    right: 13%;
+    top: 15%;
+  }
+}
+
+@media (max-width: 1280px) {
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 360px;
+    min-height: 600px;
+  }
+  #PRODUCTS .products-div .boxes .carousel-item .card-img .pr-2 {
+    width: 100%;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 320px;
+  }
+  #RECIPES .recipes-div .posters .poster .pr-1 {
+    width: 100% !important;
+  }
+}
+
+/* Media query for responsive design NAVBAR*/
+@media (max-width: 1200px) {
+  .navbar,
+  .lang,
+  #glass {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .mobile-nav {
+    display: none;
+    z-index: 2;
+  }
+  .mobile-nav.active {
+    display: block;
+  }
+}
+
+@media (max-width: 1180px) {
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 320px;
+    min-height: 600px;
+  }
+  #PRODUCTS .products-div .boxes .carousel-item .card-img .pr-2 {
+    width: 100%;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 290px;
+  }
+  #RECIPES .recipes-div .posters .poster .pr-1 {
+    width: 100% !important;
+  }
+
+  #FOOTER .foot-icons {
+    width: 45%;
+    right: 12%;
+    top: 10%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .lays-navbar {
+    width: 100%;
+    left: 0;
+    top: 20px;
+  }
+
+  .heading {
+    left: 0;
+  }
+
+  #HOME .slide {
+    width: 100%;
+    left: 0;
+  }
+  #HOME .slide a .btn {
+    transform: translateX(320%);
+  }
+  #HOME .slide a .btn.now {
+    transform: translateX(1050%);
+  }
+
+  #PRODUCTS .products-div {
+    width: 100%;
+  }
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 340px;
+    min-height: 600px;
+  }
+  #PRODUCTS .products-div .boxes .carousel-item .card-img .pr-2 {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #PRODUCTS .products-div .boxes .card-img .card-content {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  #RECIPES .recipes-div {
+    width: 100%;
+  }
+
+  #VIDEOS .videos-div {
+    width: 100%;
+  }
+
+  #SOCIAL .social-div {
+    width: 100%;
+  }
+
+  #FOOTER .footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 300px;
+    min-height: 300px;
+  }
+  #PRODUCTS .products-div .boxes .carousel-item .card-img .pr-2 {
+    width: 100%;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 270px;
+  }
+  #RECIPES .recipes-div .posters .poster .pr-1 {
+    width: 100% !important;
+  }
+
+  #FOOTER .foot-icons {
+    width: 47%;
+    right: 11.5%;
+    top: 7%;
+  }
+}
+
+@media (max-width: 900px) {
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 290px;
+    min-height: 300px;
+  }
+  #PRODUCTS .products-div .boxes .carousel-item .card-img .pr-2 {
+    width: 100%;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 240px;
+  }
+  #RECIPES .recipes-div .posters .poster .pr-1 {
+    width: 100% !important;
+  }
+
+  #FOOTER .foot-icons {
+    width: 50%;
+    transform: scale(0.9);
+    right: 9.5%;
+    top: 4%;
+  }
+}
+
+@media (max-width: 830px) {
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 260px;
+    min-height: 400px;
+  }
+  #PRODUCTS .products-div .boxes .carousel-item .card-img .pr-2 {
+    width: 100%;
+  }
+  #PRODUCTS .products-div .boxes .card-img .card-content h3 {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 220px;
+  }
+  #RECIPES .recipes-div .posters .poster .pr-1 {
+    width: 100% !important;
+  }
+  #RECIPES .recipes-div .posters .poster .poster-content h3 {
+    font-size: 0.8rem;
+  }
+
+  .vid-h3 {
+    font-size: 1.5rem;
+  }
+
+  #FOOTER .foot-icons {
+    width: 55%;
+    right: 7%;
+    top: 2%;
+    transform: scale(0.8);
+  }
+  #FOOTER .footer ul li {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 240px;
+    min-height: 50px;
+  }
+  #PRODUCTS .products-div .boxes .carousel-item .card-img .pr-2 {
+    width: 100%;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 210px;
+  }
+  #RECIPES .recipes-div .posters .poster .pr-1 {
+    width: 100% !important;
+  }
+  #RECIPES .recipes-div .posters .poster .poster-content h3 {
+    font-size: 0.8rem;
+  }
+
+  #SOCIAL .social-div .lay-layout {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #SOCIAL .social-div .lay-layout .grid-item:nth-last-child(-n + 2) {
+    display: none;
+  }
+
+  #FOOTER .foot-icons {
+    width: 50%;
+    transform: scale(1);
+    right: 9%;
+    top: 4%;
+  }
+}
+@media (min-width: 781px) {
+  .JustForMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  body {
+    margin: 2%;
+  }
+  .JustForDesktop {
+    display: none;
+  }
+  .JustForMobile {
+    display: flex;
+  }
+  #HOME .slide {
+    aspect-ratio: 2/2.5;
+  }
+  #HOME .slide .img-1 {
+    object-fit: cover;
+  }
+  #HOME .slide a .btn {
+    transform: translateX(100%);
+  }
+  #HOME .slide a .btn.now {
+    transform: translateX(390%);
+  }
+
+  #HOME .btn {
+    padding: 0.3rem 0.1rem;
+    font-size: 0.7rem;
+    bottom: 15%;
+  }
+  #HOME .slide a .btn {
+    transform: translateX(200%);
+  }
+  #HOME .slide a .btn.now {
+    transform: translateX(700%);
+  }
+
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 340px;
+    min-height: 400px;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 310px;
+  }
+
+  #VIDEOS .videos-div .vid-wrapper .video-content {
+    flex-direction: column;
+    position: relative;
+    left: 5%;
+    min-height: 450px;
+    padding: 0 4rem;
+  }
+  #VIDEOS .videos-div .video-content .content-side {
+    transform: translateY(10%);
+  }
+
+  #SOCIAL .social-div .lay-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #SOCIAL .social-div .lay-layout .grid-item:nth-last-child(-n + 4) {
+    display: none;
+  }
+
+  #FOOTER .foot-icons {
+    width: 80%;
+    right: 10%;
+    top: 55%;
+  }
+  #FOOTER .footer .list {
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 4rem !important;
+  }
+  #FOOTER .foot-bottom .copyright {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  #HOME .slide a .btn {
+    transform: translateX(180%);
+  }
+  #HOME .slide a .btn.now {
+    transform: translateX(630%);
+  }
+
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 310px;
+    min-height: 400px;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 280px;
+  }
+
+  #VIDEOS .videos-div .vid-wrapper .video-content {
+    left: 0%;
+  }
+}
+
+@media (max-width: 640px) {
+  #HOME .slide a .btn {
+    transform: translateX(170%);
+  }
+  #HOME .slide a .btn.now {
+    transform: translateX(580%);
+  }
+
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 280px;
+    min-height: 400px;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 260px;
+  }
+
+  #VIDEOS .videos-div .vid-wrapper .video-content {
+    padding: 2rem 2rem;
+    min-height: 520px;
+  }
+  #FOOTER .foot-icons {
+    width: 80%;
+    right: 9%;
+    top: 51%;
+  }
+}
+
+@media (max-width: 550px) {
+  #HOME .slide a .btn {
+    transform: translateX(140%);
+  }
+  #HOME .slide a .btn.now {
+    transform: translateX(490%);
+  }
+
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 240px;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 220px;
+  }
+
+  #VIDEOS .videos-div .video-content .video-side iframe {
+    width: 100%;
+  }
+
+  #FOOTER .foot-icons {
+    width: 84%;
+    right: 7%;
+    top: 48%;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #HOME .slide a .btn {
+    transform: translateX(120%);
+  }
+  #HOME .slide a .btn.now {
+    transform: translateX(440%);
+  }
+
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 220px;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 190px;
+  }
+
+  #FOOTER .foot-icons {
+    width: 90%;
+    right: 3.2%;
+    top: 46%;
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 450px) {
+  /* .JustForDesktop {
+    display: none;
+  } */
+
+  #HOME .slide {
+    aspect-ratio: 2/2.5;
+  }
+  #HOME .slide .img-1 {
+    object-fit: cover;
+  }
+  #HOME .slide a .btn {
+    transform: translateX(100%);
+  }
+  #HOME .slide a .btn.now {
+    transform: translateX(390%);
+  }
+
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 200px;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 170px;
+  }
+
+  #SOCIAL .social-div .lay-layout {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #SOCIAL .social-div .lay-layout .grid-item:nth-last-child(-n + 6) {
+    display: none;
+  }
+  #SOCIAL .social-div .lay-layout .grid-item .pics {
+    object-fit: contain;
+  }
+
+  #FOOTER .foot-icons {
+    width: 100%;
+    left: 1%;
+    top: 45%;
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 410px) {
+  #PRODUCTS .btn,
+  #RECIPES .btn-recipe,
+  #VIDEOS .btn-more {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+  }
+  #HOME .slide a .btn {
+    transform: translateX(80%);
+  }
+  #HOME .slide a .btn.now {
+    transform: translateX(350%);
+  }
+
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 180px;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 160px;
+  }
+
+  #FOOTER .foot-icons {
+    left: 3.5%;
+    top: 45%;
+    transform: scale(0.85);
+  }
+  .social-icon {
+    width: 80%;
+  }
+}
+
+@media (max-width: 370px) {
+  #HOME .slide a .btn {
+    transform: translateX(70%);
+  }
+  #HOME .slide a .btn.now {
+    transform: translateX(310%);
+  }
+
+  #PRODUCTS .products-div .boxes .carousel-item {
+    min-width: 170px;
+  }
+
+  #RECIPES .recipes-div .posters .poster {
+    min-width: 140px;
+  }
+  #FOOTER .copyright {
+    font-size: 0.5rem !important;
+  }
+}

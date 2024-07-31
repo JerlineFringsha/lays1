@@ -1,0 +1,614 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  /* overflow-x: hidden; */
+}
+:root {
+  --primary-color: #ffe600;
+  /* --secondary-color:; */
+  --bg-color: #fbb517;
+  --heading-color: #fff;
+  --btn1-color: #da291c;
+  --bt2-color: #00aae7;
+  --primary-fonts: "Sora", sans-serif;
+}
+body {
+  /* background: var(--bg-color); */
+  background: linear-gradient(to left top, #ffe600, #fbb517);
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn,
+.btn-recipe {
+  background-color: var(--btn1-color);
+  color: var(--heading-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 55px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+}
+.btn:hover {
+  background-color: var(--primary-color);
+  color: #000;
+}
+.btn-recipe:hover {
+  background-color: var(--bt2-color);
+  color: #000;
+}
+
+h1 {
+  color: var(--heading-color);
+  font-size: 5rem;
+}
+.heading {
+  position: relative;
+  left: 5%;
+}
+.lang {
+  display: none;
+}
+
+.lays-navbar {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary-color);
+  padding: 0em 1em;
+  position: sticky;
+  top: 0px;
+  left: 5%;
+  text-align: center;
+  z-index: 10;
+}
+.logo-navbar .logo {
+  width: 6rem;
+}
+.div-navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar .a-nav {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 55px;
+  font-size: 1rem;
+}
+.navbar .a-nav:hover {
+  background-color: var(--btn1-color);
+  color: var(--heading-color);
+}
+.div-navbar #glass {
+  padding-left: 0.7rem;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger-menu span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  margin: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add mobile nav styles */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: var(--primary-color);
+}
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-nav .a-nav {
+  display: block;
+  padding: 1rem;
+  color: #000;
+  text-align: center;
+}
+.mobile-nav .a-nav:hover {
+  background-color: var(--btn1-color);
+  color: var(--heading-color);
+}
+
+/*                                             Sections Start                            */
+#HOME {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-list a {
+  color: #000;
+}
+
+#HOME .home-img {
+  position: relative;
+  margin-top: 2rem;
+}
+.slider-wrapper {
+  position: relative;
+}
+#HOME .slide {
+  width: 90%;
+  display: flex;
+  aspect-ratio: 2.65/1;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  position: relative;
+  left: 5%;
+  object-fit: fill;
+}
+.slide .img-1 {
+  flex: 1 0 100%;
+  scroll-snap-type: start;
+  object-fit: contain;
+}
+.slide::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-nav a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.slider-nav a:hover {
+  background-color: var(--btn1-color);
+}
+.slide a .btn {
+  bottom: 10%;
+  position: absolute;
+  z-index: 2;
+  left: 100%;
+  min-width: 150px;
+  transform: translateX(340%);
+}
+.slide a .btn.now {
+  bottom: 10%;
+  transform: translateX(1105%);
+}
+
+/*                                    section -1 ends                                          */
+
+#PRODUCTS {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+#PRODUCTS .products-div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ee3124;
+  background-image: url(/images/bg-products.jpg), url(/images/bg-products2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top, bottom;
+  padding-bottom: 5rem;
+}
+#PRODUCTS .products-div .wrapper {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  left: 5%;
+}
+#PRODUCTS .products-div .boxes {
+  overflow: hidden;
+}
+
+#PRODUCTS .products-div .boxes .carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+#PRODUCTS .products-div .boxes .carousel-item {
+  width: 500px;
+  /* height: 516px; */
+}
+#PRODUCTS .products-div .boxes .card-img .card-content {
+  width: 100%;
+  position: relative;
+  height: 10rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+#PRODUCTS .products-div .boxes .card-img .card-content h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+#PRODUCTS .products-div .boxes .card-img .card-content .btn {
+  bottom: 10%;
+}
+#PRODUCTS .products-div .boxes .c1 {
+  background-color: #ed6322;
+}
+#PRODUCTS .products-div .boxes .c2 {
+  background-color: #abdff4;
+}
+#PRODUCTS .products-div .boxes .c3 {
+  background-color: #383a6f;
+}
+#PRODUCTS .products-div .boxes .c4 {
+  background-color: #0a602f;
+}
+#PRODUCTS .products-div .boxes .c5 {
+  background-color: #38d3dc;
+}
+#PRODUCTS .products-div .boxes .c6 {
+  background-color: #089244;
+}
+#PRODUCTS .products-div .boxes .c7 {
+  background-color: #d51c37;
+}
+#PRODUCTS .products-div .boxes .c8 {
+  background-color: #151a99;
+}
+#PRODUCTS .products-div .boxes .card.lay3 .pr-2,
+#PRODUCTS .products-div .boxes .card.lay4 .pr-2,
+#PRODUCTS .products-div .boxes .card.lay1 .pr-2,
+#PRODUCTS .products-div .boxes .card.lay2 .pr-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#PRODUCTS .products-div .carousel .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 10px;
+  font-size: 2.25rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#PRODUCTS .products-div .carousel .carousel-button--left {
+  left: 10px;
+}
+#PRODUCTS .products-div .carousel .carousel-button--right {
+  right: 10px;
+}
+#PRODUCTS .products-div .carousel .pr-2 {
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*                                    section -2 ends                                          */
+
+#RECIPES {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+#RECIPES .recipes-div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6be07;
+  background-image: url(/images/bg-recipes2.jpg), url(/images/bg-recipes3.jpg);
+  background-size: contain, contain;
+  background-position: top, bottom;
+  background-repeat: no-repeat, no-repeat;
+  padding-bottom: 5rem;
+  background-position: top, bottom;
+  border: 1px solid black;
+}
+#RECIPES .recipes-div .posters {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  position: relative;
+  overflow: hidden;
+}
+#RECIPES .recipes-div .posters .posters-buttons {
+  overflow: hidden;
+}
+.poster-recipes {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.5s ease-in-out;
+}
+#RECIPES .recipes-div .posters .poster {
+  width: 100%;
+  background-color: #fee002;
+  border: 1px solid black;
+}
+#RECIPES .recipes-div .posters .poster .poster-content {
+  width: 100%;
+  position: relative;
+  height: 8rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+#RECIPES .recipes-div .posters .poster .poster-content h3 {
+  font-size: 1rem;
+}
+#RECIPES .recipes-div .posters .poster .poster-content .btn-recipe {
+  bottom: 15%;
+}
+#RECIPES .recipes-div .posters .poster .pr-1 {
+  width: 313px;
+}
+#RECIPES .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 10px;
+  font-size: 2.25rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--btn1-color);
+}
+#RECIPES .recipes-div .carousel-button-left {
+  left: 10px;
+}
+#RECIPES .recipes-div .carousel-button-right {
+  right: 10px;
+}
+
+/*                                    section -3 ends                                          */
+
+#VIDEOS {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+#VIDEOS .videos-div {
+  width: 90%;
+  background-color: #00aa4f;
+  background-image: url(/images/bg-videos.jpg), url(/images/bg-videos2.jpg);
+  background-size: contain, contain;
+  background-position: top, bottom;
+  background-repeat: no-repeat, no-repeat;
+  padding-bottom: 5rem;
+  position: relative;
+}
+#VIDEOS .videos-div .vid-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#VIDEOS .videos-div .vid-wrapper .vid-slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.vid-slider::-webkit-scrollbar {
+  display: none;
+}
+.video-side {
+  flex: 1;
+}
+.content-side {
+  flex: 1;
+}
+#VIDEOS .videos-div .video-content {
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  padding: 4rem;
+}
+#VIDEOS .videos-div .video-content .content-side {
+  transform: translateY(40%);
+  text-align: center;
+  position: relative;
+}
+.video-nav {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.video-nav a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #535252;
+}
+.btn-more {
+  background-color: var(--btn1-color);
+  color: var(--heading-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 55px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.vid-h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+.video-nav a:hover {
+  background-color: var(--btn1-color);
+}
+
+/*                                    section -4 ends                                          */
+
+#SOCIAL {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+#SOCIAL .social-div {
+  width: 90%;
+  background-color: #00aae7;
+  background-image: url(/images/bg-social.jpg), url(/images/bg-social2.jpg);
+  padding-bottom: 5rem;
+  background-size: contain, contain;
+  background-position: top, bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+#SOCIAL .social-div .lay-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 90%;
+  position: relative;
+  left: 5%;
+  right: 5%;
+}
+#SOCIAL .social-div .lay-layout .grid-item {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+#SOCIAL .social-div .lay-layout .grid-item .pics {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+#SOCIAL .social-div .lay-layout .grid-item .overlay {
+  position: absolute;
+  text-align: center;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.grid-item:hover .pics {
+  opacity: 0;
+}
+.grid-item:hover .overlay {
+  opacity: 1 !important;
+}
+.head {
+  color: gray;
+  font-size: 2rem;
+}
+
+/*                                    section -5 ends                                          */
+
+#FOOTER {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+#FOOTER .footer {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+#FOOTER .footer .foot-top {
+  position: relative;
+}
+#FOOTER .footer .foot-top .frame {
+  width: 100%;
+}
+.foot-icons {
+  position: absolute;
+  width: 45%;
+  right: 12.5%;
+  top: 11%;
+  z-index: 1;
+}
+#FOOTER .footer .foot-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#FOOTER .footer ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+#FOOTER .footer ul li {
+  font-size: 0.8rem;
+}
+/* #FOOTER .footer ul .list{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+#FOOTER .footer ul li .list{
+  font-size: 0.8rem;
+} */
+#FOOTER .footer ul li a {
+  color: #000;
+}
+#FOOTER .footer .foot-bottom .logo-footer {
+  margin: 2rem 0rem;
+}
+#FOOTER .footer .foot-bottom .logo-footer .logo {
+  width: 6rem;
+}
+.foot-bottom .a-btn {
+  padding: 0.5rem;
+  border: none;
+}
+.foot-bottom .a-btn:hover {
+  background-color: var(--btn1-color);
+  color: var(--heading-color);
+}
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
+  margin: 50px 0;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* <!-- <section id="delete">
+<p>delete paina porane </p>
+</section> --> */
