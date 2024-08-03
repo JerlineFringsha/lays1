@@ -553,10 +553,12 @@ h1 {
 }
 .foot-icons {
   position: absolute;
-  width: 45%;
-  right: 12.5%;
-  top: 11%;
+  width: 50%;
   z-index: 1;
+  transform: scale(0.85);
+  right: 9.5%;
+  top: 14%;
+
 }
 #FOOTER .footer .foot-bottom {
   display: flex;
@@ -571,14 +573,6 @@ h1 {
 #FOOTER .footer ul li {
   font-size: 0.8rem;
 }
-/* #FOOTER .footer ul .list{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-#FOOTER .footer ul li .list{
-  font-size: 0.8rem;
-} */
 #FOOTER .footer ul li a {
   color: #000;
 }
@@ -609,6 +603,3 @@ h1 {
     transform: translateY(0);
   }
 }
-/* <!-- <section id="delete">
-<p>delete paina porane </p>
-</section> --> */
